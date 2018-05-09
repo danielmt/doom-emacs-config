@@ -57,7 +57,7 @@
       ;pdf               ; pdf enhancements
       ;rgb               ; creating color strings
        rotate-text       ; cycle region at point between text candidates
-       term              ; terminals in Emacs
+      ;term              ; terminals in Emacs
       ;tmux              ; an API for interacting with tmux
       ;upload            ; map local to remote projects via ssh/ftp
 
