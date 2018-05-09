@@ -7,3 +7,4 @@
                        "--single-quote"))
   )
 
+(load! +tide)
