@@ -120,6 +120,7 @@
 
        :private
        personal
+       js
 
        :config
        private
