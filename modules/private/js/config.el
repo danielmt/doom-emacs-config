@@ -7,4 +7,12 @@
                        "--single-quote"))
   )
 
+(def-package! flycheck-flow
+  :after flycheck
+  :config
+  (add-hook! 'rjsx-mode-hook
+             (push 'javascript-flow-coverage flycheck-disabled-checkers))
+  (flycheck-add-next-checker 'javascript-eslint 'javascript-flow)
+  )
+
 (load! +tide)
