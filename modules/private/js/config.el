@@ -15,4 +15,4 @@
   (flycheck-add-next-checker 'javascript-eslint 'javascript-flow)
   )
 
-(load! +tide)
+(load! +hooks)
