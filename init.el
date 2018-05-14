@@ -121,6 +121,7 @@
        :private
        personal
        js
+       web
        completion
 
        :config
