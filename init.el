@@ -9,10 +9,10 @@
        (lookup           ; helps you navigate your code and documentation
         +devdocs)        ; ...on devdocs.io online
        ;+docsets)        ; ...or in Dash docsets locally
-       services          ; TODO managing external services & code builders
        snippets          ; my elves. They type so I don't have to
       ;spellcheck        ; tasing you for misspelling mispelling
-       syntax-checker    ; tasing you for every semicolon you forget
+       (syntax-checker   ; tasing you for every semicolon you forget
+        +childframe)     ; use childframes for error popups (Emacs 26+ only)
        version-control   ; remember, remember that commit in November
        workspaces        ; tab emulation, persistence & separate workspaces
 
@@ -22,7 +22,8 @@
         +childframe)     ; a nicer company UI. Emacs +26 only!
       ;helm              ; the *other* search engine for love and life
       ;ido               ; the other *other* search engine...
-       ivy               ; a search engine for love and life
+       (ivy              ; a search engine for love and life
+        +childframe)     ; uses childframes for popups (Emacs 26+ only)
 
        :ui
        (popup            ; tame sudden yet inevitable temporary windows
@@ -55,6 +56,7 @@
        magit             ;
       ;password-store    ; password manager for nerds
       ;pdf               ; pdf enhancements
+      ;prodigy           ; Managing external services
       ;rgb               ; creating color strings
        rotate-text       ; cycle region at point between text candidates
       ;term              ; terminals in Emacs
