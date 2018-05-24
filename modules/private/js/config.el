@@ -12,7 +12,7 @@
   :config
   (add-hook! 'rjsx-mode-hook
              (push 'javascript-flow-coverage flycheck-disabled-checkers))
-  (flycheck-add-next-checker 'javascript-eslint 'javascript-flow)
+  (flycheck-add-next-checker 'javascript-flow 'javascript-eslint)
   )
 
 (load! +hooks)
