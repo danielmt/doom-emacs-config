@@ -11,3 +11,4 @@
 (add-to-list 'default-frame-alist '(ns-appearance . dark))
 
 (load! "+pragmata")
+(load! "+magit")
