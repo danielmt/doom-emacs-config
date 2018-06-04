@@ -12,6 +12,8 @@
   :config
   (add-hook! 'rjsx-mode-hook
              (push 'javascript-flow-coverage flycheck-disabled-checkers))
+  (setq
+   flycheck-checker-error-threshold 800)
   (flycheck-add-next-checker 'javascript-flow 'javascript-eslint)
   )
 
