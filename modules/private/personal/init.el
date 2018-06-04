@@ -1,6 +1,6 @@
 ; remember to install font icons:
 ; M-x all-the-icons-install-fonts
-(setq doom-font (font-spec :family "PragmataPro Mono" :size 18))
+(setq doom-font (font-spec :family "PragmataPro Mono" :size 20))
 
 ; fix home/end on mac
 (global-set-key (kbd "<home>") 'doom/backward-to-bol-or-indent)
@@ -10,3 +10,4 @@
 (add-to-list 'default-frame-alist '(ns-transparent-titlebar . t))
 (add-to-list 'default-frame-alist '(ns-appearance . dark))
 
+(load! "+pragmata")
