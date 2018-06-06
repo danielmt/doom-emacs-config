@@ -4,6 +4,7 @@
   magit-auto-revert-mode t
   magit-revert-buffers 1
   magit-commit-show-diff nil
+  git-commit-summary-max-length 140
   magit-display-buffer-function 'magit-display-buffer-fullcolumn-most-v1
   magit-diff-refine-hunk 'all
   magit-delete-by-moving-to-trash nil
@@ -13,4 +14,6 @@
   (remove-hook 'git-commit-finish-query-functions
                'git-commit-check-style-conventions)
   (remove-hook 'server-switch-hook
-               'magit-commit-diff))
+               'magit-commit-diff)
+  (add-hook 'git-commit-setup-hook 'turn-off-auto-fill t)
+  )
