@@ -137,6 +137,7 @@
        personal
        js
        web
+       gtd
 
        :config
        ;; For literate config users. This will tangle+compile a config.org
