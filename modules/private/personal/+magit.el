@@ -4,7 +4,7 @@
   magit-auto-revert-mode t
   magit-revert-buffers 1
   magit-commit-show-diff nil
-  magit-display-buffer-function 'magit-display-buffer-fullcolumn-most-v1
+  ; magit-display-buffer-function 'magit-display-buffer-fullcolumn-most-v1
   magit-diff-refine-hunk 'all
   magit-delete-by-moving-to-trash nil
   magit-revision-use-gravatar-kludge t)
