@@ -7,9 +7,18 @@
 (global-set-key (kbd "<end>") 'doom/forward-to-last-non-comment-or-eol)
 (global-set-key (kbd "M-RET") 'toggle-frame-fullscreen)
 
-; dark titlebar on mac
-(add-to-list 'default-frame-alist '(ns-transparent-titlebar . t))
-(add-to-list 'default-frame-alist '(ns-appearance . dark))
+; mac customizations
+(when (memq window-system '(ns mac))
+  ; dark titlebar
+  (add-to-list 'default-frame-alist '(ns-transparent-titlebar . t))
+  (add-to-list 'default-frame-alist '(ns-appearance . dark))
+
+  (setq
+    mac-option-key-is-meta nil
+    mac-command-key-is-meta t
+    mac-command-modifier 'meta
+    mac-option-modifier nil)
+  )
 
 (load! "+pragmata")
 (load! "+magit")
