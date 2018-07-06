@@ -75,7 +75,7 @@
 
        :lang
       ;assembly          ; assembly for fun or debugging
-      (cc -irony -rtags) ; C/C++/Obj-C madness
+      cc                 ; C/C++/Obj-C madness (optional: +irony +rtags)
       ;common-lisp       ; if you've seen one lisp, you've seen them all
       ;crystal           ; ruby at the speed of c
       ;clojure           ; java with a lisp
