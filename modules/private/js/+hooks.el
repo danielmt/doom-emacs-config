@@ -25,3 +25,6 @@
      flycheck-check-syntax-automatically '(save mode-enabled)
     ))
   )
+
+(setq auto-mode-alist (delete '("\\.js\\'" . js2-mode) auto-mode-alist))
+(add-to-list 'auto-mode-alist '("\\.js\\'" . rjsx-mode))
