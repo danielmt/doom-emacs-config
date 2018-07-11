@@ -2,6 +2,13 @@
   :config
   (setq
     deft-directory "~/Tresor/notes"
-    deft-extensions '("txt" "org")
-    deft-recursive t)
+    deft-extensions '("org" "md" "txt")
+    deft-recursive t
+    deft-use-filename-as-title nil
+    deft-use-filter-string-for-filename t
+    deft-file-naming-rules
+      '((noslash . "-")
+      (nospace . "-")
+      (case-fn . downcase))
+    )
   )
