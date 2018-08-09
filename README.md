@@ -18,7 +18,3 @@ Adds a little oomph to javascript.
 - prettify-js on save
 - tide identifier highlighting
 - flow support
-
-### completion
-
-Adds fuzzy matching support for ivy, using flx.
