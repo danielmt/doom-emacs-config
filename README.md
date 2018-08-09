@@ -4,7 +4,7 @@ my opinionated doom-emacs config.
 
 ## setup
 
-This config is being used on Emacs 26.1-rc1 from emacsformacosx.com.
+This config is being used on Emacs 26.1 (railwaycat/emacsmacport/emacs-mac).
 
 - on ~/.emacs.d: `make`
 - Once running: `M-x all-the-icons-install-fonts`
