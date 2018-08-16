@@ -11,6 +11,17 @@ This config is being used on Emacs 26.1 (railwaycat/emacsmacport/emacs-mac).
 
 ## modules
 
+### personal
+
+- font/theme/keybindings settings
+- magit settings
+- pragmata-prettify-symbols
+- projectile file ignores
+
+### gtd
+
+- deft support
+
 ### js
 
 Adds a little oomph to javascript.
@@ -18,3 +29,7 @@ Adds a little oomph to javascript.
 - prettify-js on save
 - tide identifier highlighting
 - flow support
+
+### web
+
+Redefines indentation.
