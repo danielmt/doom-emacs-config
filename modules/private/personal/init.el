@@ -1,6 +1,7 @@
 ; remember to install font icons:
 ; M-x all-the-icons-install-fonts
 (setq doom-font (font-spec :family "PragmataPro" :size 20))
+(setq doom-theme 'doom-nord)
 
 ; no line numbers
 (setq doom-line-numbers-style nil)
