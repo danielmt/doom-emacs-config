@@ -6,11 +6,6 @@
 ; no line numbers
 (setq doom-line-numbers-style nil)
 
-; fix home/end on mac
-(global-set-key (kbd "<home>") 'doom/backward-to-bol-or-indent)
-(global-set-key (kbd "<end>") 'doom/forward-to-last-non-comment-or-eol)
-(global-set-key (kbd "M-RET") 'toggle-frame-fullscreen)
-
 ; mac customizations
 (when (memq window-system '(ns mac))
   ; dark titlebar
@@ -26,3 +21,4 @@
 
 (load! "+pragmata")
 (load! "+magit")
+(load! "+bindings")
