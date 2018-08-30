@@ -7,8 +7,7 @@
        (evil +everywhere); come to the dark side, we have cookies
       ;file-templates    ; auto-snippets for empty files
        (lookup           ; helps you navigate your code and documentation
-        +devdocs)        ; ...on devdocs.io online
-       ;+docsets)        ; ...or in Dash docsets locally
+        +docsets)        ; ...or in Dash docsets locally
        snippets          ; my elves. They type so I don't have to
       ;spellcheck        ; tasing you for misspelling mispelling
        (syntax-checker   ; tasing you for every semicolon you forget
