@@ -1,3 +1,1 @@
-(package! deft)
-
-(depends-on! :lang org)
+(depends-on! :ui deft)
