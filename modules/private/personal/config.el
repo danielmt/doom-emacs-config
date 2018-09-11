@@ -9,8 +9,3 @@
   (add-to-list 'projectile-globally-ignored-file-suffixes ".jpg")
   (add-to-list 'projectile-globally-ignored-file-suffixes ".gif")
   )
-
-(map! :leader
-      (:desc "apps" :prefix "a"
-        :desc "Deft"  :nv "n" #'deft))
-
