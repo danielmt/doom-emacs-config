@@ -19,6 +19,4 @@
     mac-option-modifier nil)
   )
 
-(load! "+pragmata")
 (load! "+magit")
-(load! "+bindings")

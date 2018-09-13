@@ -9,3 +9,6 @@
   (add-to-list 'projectile-globally-ignored-file-suffixes ".jpg")
   (add-to-list 'projectile-globally-ignored-file-suffixes ".gif")
   )
+
+(load! "+bindings")
+(load! "+pragmata")
