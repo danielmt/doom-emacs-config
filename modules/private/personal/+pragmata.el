@@ -1,4 +1,4 @@
-;; pragmatapro-prettify-symbols-v0.826.el
+;; pragmatapro-prettify-symbols-v0.827.el
 ;; https://github.com/fabrizioschiavi/pragmatapro/tree/master/emacs_snippets
 (setq prettify-symbols-unprettify-at-point 'right-edge)
 
@@ -160,6 +160,10 @@
             ("<==>"      #XE9F3)
             ("<|-"       #XE9F4)
             ("<<|"       #XE9F5)
+            ("<-<"       #XE9F7)
+            ("<-->"      #XE9F8)
+            ("<<=="      #XE9F9)
+            ("<=="       #XE9FA)
             ("==<"       #XEA00)
             ("=="        #XEA01)
             ("==="       #XEA02)
@@ -168,6 +172,8 @@
             ("=~"        #XEA05)
             ("=>>"       #XEA06)
             ("=/="       #XEA07)
+            ("=~="       #XEA08)
+            ("==>>"      #XEA09)
             ("≡≡"        #XEA10)
             ("≡≡≡"       #XEA11)
             ("≡:≡"       #XEA12)
@@ -181,6 +187,7 @@
             (">>^"       #XEA27)
             (">>|"       #XEA28)
             (">!="       #XEA29)
+            (">->"       #XEA2A)
             ("??"        #XEA40)
             ("?~"        #XEA41)
             ("?="        #XEA42)
@@ -211,6 +218,8 @@
             ("|<<"       #XEA6A)
             ("||>"       #XEA6B)
             ("|>>"       #XEA6C)
+            ("|-"        #XEA6D)
+            ("||-"       #XEA6E)
             ("~="        #XEA70)
             ("~>"        #XEA71)
             ("~~>"       #XEA72)
