@@ -237,3 +237,5 @@
 (add-hook! 'prog-mode-hook #'add-pragmatapro-prettify-symbols-alist)
 
 (global-prettify-symbols-mode t)
+;; (if (fboundp 'mac-auto-operator-composition-mode)
+;;     (mac-auto-operator-composition-mode))
