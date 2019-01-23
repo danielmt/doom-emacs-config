@@ -13,10 +13,10 @@
   (add-to-list 'default-frame-alist '(ns-appearance . dark))
 
   (setq
-    mac-option-key-is-meta nil
-    mac-command-key-is-meta t
-    mac-command-modifier 'meta
-    mac-option-modifier 'super)
+    mac-option-key-is-meta t
+    mac-command-key-is-meta nil
+    mac-command-modifier 'super
+    mac-option-modifier 'meta)
   )
 
 (load! "+magit")
