@@ -1,14 +1,8 @@
 (after! projectile
-  (add-to-list 'projectile-globally-ignored-file-suffixes ".snap")
-  (add-to-list 'projectile-globally-ignored-file-suffixes ".ttf")
-  (add-to-list 'projectile-globally-ignored-file-suffixes ".eot")
-  (add-to-list 'projectile-globally-ignored-file-suffixes ".woff")
-  (add-to-list 'projectile-globally-ignored-file-suffixes ".woff2")
-  (add-to-list 'projectile-globally-ignored-file-suffixes ".svg")
-  (add-to-list 'projectile-globally-ignored-file-suffixes ".png")
-  (add-to-list 'projectile-globally-ignored-file-suffixes ".jpg")
-  (add-to-list 'projectile-globally-ignored-file-suffixes ".gif")
+  (setq projectile-globally-ignored-file-suffixes
+        '(".elc" ".pyc" ".o" ".snap" ".ttf" ".eot" ".woff" ".woff2" ".svg" ".png" ".jpg" ".gif"))
   )
 
-(load! "+bindings")
 (load! "+pragmata")
+(load! "+parens")
+(load! "+bindings")
