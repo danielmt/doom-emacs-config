@@ -6,6 +6,7 @@ my opinionated doom-emacs config.
 
 This config is being used on Emacs 26.1 (railwaycat/emacsmacport/emacs-mac).
 
+- Install emacs-mac with: `--with-modules --with-xml2 --with-natural-title-bar --with-modern-icon --with-gnutls --with-imagemagick`
 - on ~/.emacs.d: `make`
 - Once running: `M-x all-the-icons-install-fonts`
 
@@ -14,8 +15,8 @@ This config is being used on Emacs 26.1 (railwaycat/emacsmacport/emacs-mac).
 - on ~/.emacs.d:
 
 ```
-make clean && make update && make && make compile-core
-bin/doom compile :plugins
+make clean && make update && make 
+bin/doom compile :plugins && && make compile-core
 ```
 
 ## modules
