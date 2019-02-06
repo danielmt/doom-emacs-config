@@ -152,9 +152,10 @@
 
        :private
        personal
+       gtd
        js
        web
-       gtd
+       python
 
        :config
        ;; For literate config users. This will tangle+compile a config.org
