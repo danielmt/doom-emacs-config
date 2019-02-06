@@ -43,3 +43,7 @@ Adds a little oomph to javascript.
 ### web
 
 Redefines indentation.
+
+### python
+
+Adds mypy static typing check. It's necessary to install `mypy` package.
