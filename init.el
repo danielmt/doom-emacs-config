@@ -11,15 +11,11 @@
        (lookup           ; helps you navigate your code and documentation
         +docsets)        ; ...or in Dash docsets locally
        snippets          ; my elves. They type so I don't have to
-       ;;spellcheck        ; tasing you for misspelling mispelling
-       (syntax-checker   ; tasing you for every semicolon you forget
-       ;; +childframe     ; use childframes for error popups (Emacs 26+ only)
-        )
        workspaces        ; tab emulation, persistence & separate workspaces
 
        :completion
        (company          ; the ultimate code completion backend
-       ;; +auto           ; as-you-type code completion
+        +auto            ; as-you-type code completion
         )
        (helm             ; the *other* search engine for love and life
         +fuzzy)          ; enable fuzzy search backend for helm
@@ -60,8 +56,8 @@
 
        :emacs
        (dired            ; making dired pretty [functional]
-       +ranger         ; bringing the goodness of ranger to dired
-       ;;+icons          ; colorful icons for dired-mode
+        +ranger          ; bringing the goodness of ranger to dired
+        +icons           ; colorful icons for dired-mode
          )
        electric          ; smarter, keyword-based electric-indent
        ;;eshell            ; a consistent, cross-platform shell (WIP)
@@ -74,7 +70,12 @@
        docker
        editorconfig      ; let someone else argue about tabs vs spaces
        ;;ein               ; tame Jupyter notebooks with emacs
+       ;;flyspell          ; tasing you for misspelling mispelling
+       (flycheck          ; tasing you for every semicolon you forget
+       ;; +childframe     ; use childframes for error popups (Emacs 26+ only)
+        )
        ;;gist              ; interacting with github gists
+       ;;lsp
        macos             ; MacOS-specific commands
        magit             ; a git porcelain for Emacs
        ;;make              ; run make tasks from Emacs
@@ -86,6 +87,7 @@
        ;;tmux              ; an API for interacting with tmux
        ;;upload            ; map local to remote projects via ssh/ftp
        ;;wakatime
+       ;;vterm             ; another terminals in Emacs
 
        :lang
        ;;assembly          ; assembly for fun or debugging
