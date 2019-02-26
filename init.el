@@ -159,7 +159,7 @@
        :private
        personal
        gtd
-       js
+       jsx
        web
        python
 
