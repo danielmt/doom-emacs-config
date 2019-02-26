@@ -1,5 +1,8 @@
 (def-package! flycheck-mypy
-  :after flycheck
+  :when (featurep! :lang python)
+  :when (featurep! :feature syntax-checker)
+  :hook (python-mode . flycheck-mode)
   :config
-  (add-hook 'python-mode-hook 'flycheck-mode)
+  (add-hook! 'python-mode
+             (setq flycheck-checker 'python-mypy))
   )
