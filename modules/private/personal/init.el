@@ -3,6 +3,8 @@
 (setq doom-font (font-spec :family "PragmataPro Mono Liga" :size 18))
 (setq doom-theme 'doom-spacegrey)
 
+(setq shell-file-name "zsh")
+
 ; no line numbers
 (setq doom-line-numbers-style nil)
 
