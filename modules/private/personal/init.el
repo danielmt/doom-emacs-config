@@ -28,4 +28,6 @@
   doom-line-numbers-style nil
   )
 
+(exec-path-from-shell-initialize)
+
 (load! "+magit")
