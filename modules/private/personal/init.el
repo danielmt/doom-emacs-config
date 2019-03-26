@@ -14,20 +14,22 @@
       mac-option-key-is-meta t
       mac-command-key-is-meta nil
       mac-command-modifier 'super
-      mac-option-modifier 'meta))
-  (setq doom-font (font-spec :family "PragmataPro Mono Liga"))
+      mac-option-modifier 'meta)
+    )
+  (setq
+    doom-font (font-spec :family "PragmataPro Mono Liga"))
   )
 
 (setq
   doom-theme 'doom-spacegrey
 
-  ; fix paths that are only set on zsh settings
-  shell-file-name "zsh"
-
   ; no line numbers
   doom-line-numbers-style nil
-  )
 
+  ; fix paths that are only set on zsh settings
+  shell-file-name "zsh")
+
+;; have to call it because of shell-file-name definition
 (exec-path-from-shell-initialize)
 
 (load! "+magit")
