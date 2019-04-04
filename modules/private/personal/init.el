@@ -29,7 +29,4 @@
   ; fix paths that are only set on zsh settings
   shell-file-name "zsh")
 
-;; have to call it because of shell-file-name definition
-(exec-path-from-shell-initialize)
-
 (load! "+magit")
