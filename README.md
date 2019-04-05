@@ -46,4 +46,13 @@ Redefines indentation.
 
 ### python
 
-Adds mypy static typing check. It's necessary to install `mypy` package.
+Adds mypy static typing check.
+
+Requirements:
+
+- mypy
+- flake8
+- flake8-mypy
+
+
+flake8 and flake8-mypy needs to be installed in the used pyenv python version for the project.
