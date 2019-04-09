@@ -165,7 +165,6 @@
        gtd
        jsx
        web
-       python
 
        :config
        ;; For literate config users. This will tangle+compile a config.org
