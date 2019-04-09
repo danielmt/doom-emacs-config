@@ -10,6 +10,13 @@ This config is being used on Emacs 26.1 (railwaycat/emacsmacport/emacs-mac).
 - on ~/.emacs.d: `make`
 - Once running: `M-x all-the-icons-install-fonts`
 
+General requirements:
+
+- discount
+- editorconfig
+- ripgrep
+- the_silver_searcher
+
 ## update all packages and plugins
 
 - on ~/.emacs.d:
@@ -28,10 +35,6 @@ bin/doom compile :plugins && && make compile-core
 - pragmata-prettify-symbols
 - projectile file ignores
 
-### gtd
-
-- deft support
-
 ### js
 
 Adds a little oomph to javascript.
@@ -40,16 +43,25 @@ Adds a little oomph to javascript.
 - tide identifier highlighting
 - flow support
 
+Requirements:
+
+- flow-bin
+- flow-typed
+- js-yaml
+- prettier
+- stylelint
+- typescript
+- tslint
+
 ### web
 
 Redefines indentation.
 
 ### python
 
-Adds mypy static typing check.
-
 Requirements:
 
+- pyenv
 - mypy
 - flake8
 - flake8-mypy
