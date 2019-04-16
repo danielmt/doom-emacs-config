@@ -1,4 +1,4 @@
-;; pragmatapro-prettify-symbols-v0.827.el
+;; pragmatapro-prettify-symbols-v0.827.el - d60a212
 ;; https://github.com/fabrizioschiavi/pragmatapro/tree/master/emacs_snippets
 (setq prettify-symbols-unprettify-at-point 'right-edge)
 
