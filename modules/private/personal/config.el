@@ -6,3 +6,4 @@
 (load! "+pragmata")
 (load! "+parens")
 (load! "+bindings")
+(load! "+magit")
