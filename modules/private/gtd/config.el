@@ -1,5 +1,4 @@
-(def-package! deft
-  :config
+(after! deft
   (setq
     deft-directory "~/Tresor/notes"
     deft-extensions '("org" "md" "txt")
