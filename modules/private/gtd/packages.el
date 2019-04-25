@@ -1,1 +1,1 @@
-(depends-on! :ui deft)
+(require! :ui deft)
