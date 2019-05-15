@@ -1,7 +1,11 @@
 ;;; init.el -*- lexical-binding: t; -*-
 ;; Copy me to ~/.doom.d/init.el or ~/.config/doom/init.el, then edit me!
 
-(doom! :completion
+(doom! :input
+       ;;chinese
+       ;;japanese
+
+       :completion
        (company          ; the ultimate code completion backend
         +auto)           ; as-you-type code completion
        (helm             ; the *other* search engine for love and life
@@ -134,7 +138,7 @@
        ;;qt                ; the 'cutest' gui framework ever
        ;;racket            ; a DSL for DSLs
        rest              ; Emacs as a REST client
-       ;;ruby              ; 1.step do {|i| p "Ruby is #{i.even? ? 'love' : 'life'}"}
+       ;;ruby              ; 1.step {|i| p "Ruby is #{i.even? ? 'love' : 'life'}"}
        rust              ; Fe2O3.unwrap().unwrap().unwrap().unwrap()
        ;;scala             ; java, but good
        sh                ; she sells (ba|z|fi)sh shells on the C xor (+fish)
