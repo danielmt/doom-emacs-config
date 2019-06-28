@@ -1,5 +1,5 @@
 (setq-default
-   tide-tsserver-executable "/usr/local/bin/tsserver"
+   ;; tide-tsserver-executable "/usr/local/bin/tsserver"
    tide-format-options '(:indentSize 2 :indentStyle 2 :tabSize 2 :ConvertTabsToSpaces t)
   )
 
