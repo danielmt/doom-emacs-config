@@ -5,7 +5,7 @@
     deft-extensions '("md" "org" "txt")
     deft-default-extension "md"
     deft-markdown-mode-title-level 1
-    deft-use-filename-as-title nil
+    deft-use-filename-as-title t
     deft-use-filter-string-for-filename t
     deft-file-naming-rules
       '((noslash . "-")
