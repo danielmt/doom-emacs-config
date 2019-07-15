@@ -20,7 +20,16 @@
      [M-right] #'sp-end-of-sexp
      [M-up]    #'sp-backward-symbol
      [M-down]  #'sp-forward-symbol
-     )))
+
+    ;; FIXME single-quote, underscore and angle-bracket not working
+     "C-c ("   #'wrap-with-parens
+     "C-c ["   #'wrap-with-brackets
+     "C-c {"   #'wrap-with-braces
+     "C-c '"   #'wrap-with-single-quotes
+     "C-c \""  #'wrap-with-double-quotes
+     "C-c `"   #'wrap-with-back-quotes
+     "C-c _"   #'wrap-with-underscores
+     "C-c <"   #'wrap-with-angle-brackets)))
 
  ; (:after smartparens
  ;   (:map smartparens-mode-map
