@@ -6,6 +6,4 @@
   (sp-pair "'" "'" :wrap "C-c \'")
   (sp-pair "\"" "\"" :wrap "C-c \"")
   (sp-pair "`" "`" :wrap "C-c `")
-  (sp-local-pair 'markdown-mode "*" "*" :wrap "C-c 8")
-  (sp-local-pair 'markdown-mode "_" "_" :wrap "C-c \_")
   )
