@@ -14,18 +14,14 @@
      [C-M-k]   #'sp-kill-sexp
      [C-M-t]   #'sp-transpose-sexp
 
-     [s-down]  #'sp-down-sexp
-     [s-up]    #'sp-up-sexp
-     [M-left]  #'sp-beginning-of-sexp
-     [M-right] #'sp-end-of-sexp
-     [M-up]    #'sp-backward-symbol
-     [M-down]  #'sp-forward-symbol
+     [M-left]    #'sp-beginning-of-sexp
+     [M-right]   #'sp-end-of-sexp
+     [M-up]      #'sp-backward-up-sexp
+     [M-down]    #'sp-backward-down-sexp
+     [s-down]    #'sp-down-sexp
+     [s-up]      #'sp-up-sexp
+     [s-left]    #'sp-backward-sexp
+     [s-right]   #'sp-forward-sexp
+     [M-s-right] #'sp-next-sexp
+     [M-s-left]  #'sp-previous-sexp
      )))
-
- ; (:after smartparens
- ;   (:map smartparens-mode-map
- ;     "C-M-d"     #'sp-splice-sexp
- ;     "C-<right>" #'sp-forward-slurp-sexp
- ;     "M-<right>" #'sp-forward-barf-sexp
- ;     "C-<left>"  #'sp-backward-slurp-sexp
- ;     "M-<left>"  #'sp-backward-barf-sexp))
