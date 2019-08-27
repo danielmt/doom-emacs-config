@@ -258,20 +258,8 @@
             ("_|_"        #XEA97)
             )))
 
-;; old
-;; (defun add-pragmatapro-prettify-symbols-alist ()
-;;   (dolist (alias pragmatapro-prettify-symbols-alist)
-;;     (push alias prettify-symbols-alist)))
-;;
-;; (add-hook! (text-mode prog-mode) #'add-pragmatapro-prettify-symbols-alist)
-
-;; new
 (defun add-pragmatapro-prettify-symbols-alist ()
   (setq prettify-symbols-alist pragmatapro-prettify-symbols-alist))
-
-(defun prettify-hook ()
-  (add-pragmatapro-prettify-symbols-alist)
-  (setup-compose-predicate))
 
 (defun setup-compose-predicate ()
   (setq prettify-symbols-compose-predicate
@@ -284,6 +272,10 @@
             (not (or (memq (char-syntax (or (char-before start) ?\s)) syntaxes-beg)
                      (memq (char-syntax (or (char-after end) ?\s)) syntaxes-end)
                      (nth 3 (syntax-ppss))))))))
+
+(defun prettify-hook ()
+  (add-pragmatapro-prettify-symbols-alist)
+  (setup-compose-predicate))
 
 (add-hook! (text-mode prog-mode) #'prettify-hook)
 
