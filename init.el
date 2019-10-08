@@ -43,6 +43,7 @@
         +everywhere
         +commands)
        ;;file-templates    ; auto-snippets for empty files
+       ;;god               ; run Emacs commands without modifier keys
        fold              ; (nigh) universal code folding
        ;;(format +onsave)  ; automated prettiness
        ;;lispy             ; vim for lisp, for people who dont like vim
@@ -129,6 +130,7 @@
        ;;ocaml             ; an objective camel
        (org                ; organize your plain life in plain text
         ;;+dragndrop       ; drag & drop files/images into org buffers
+        ;;+hugo           ; use Emacs for hugo blogging
         ;;+ipython         ; ipython/jupyter support for babel
         +pandoc          ; export-with-pandoc support
         +present)        ; using org-mode for presentations
