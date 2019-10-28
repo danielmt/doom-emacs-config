@@ -20,7 +20,7 @@
   )
 
 (setq
- doom-theme 'doom-palenight
+ doom-theme 'doom-gruvbox
 
  ; no line numbers
  doom-line-numbers-style nil
