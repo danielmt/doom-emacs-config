@@ -29,3 +29,6 @@
  persp-autokill-buffer-on-remove nil
 
  shell-file-name "zsh")
+
+;; https://github.com/hlissner/doom-emacs/issues/2135
+(fset 'battery-update #'ignore)
