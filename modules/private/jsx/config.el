@@ -1,4 +1,4 @@
-(def-package! prettier-js
+(use-package! prettier-js
   :config
   (add-hook 'rjsx-mode-hook 'prettier-js-mode)
   (setq
@@ -7,7 +7,7 @@
                        "--single-quote"))
   )
 
-(def-package! flycheck-flow
+(use-package! flycheck-flow
   :after flycheck
   :config
   (add-hook! 'rjsx-mode-hook
@@ -32,7 +32,7 @@
     (setq-local flow-minor-default-binary executable)
     (setq-local flycheck-javascript-flow-executable executable)))
 
-(def-package! company-flow
+(use-package! company-flow
   :after company
   :config
   (add-to-list 'company-backends 'company-flow)
