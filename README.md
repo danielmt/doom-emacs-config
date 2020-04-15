@@ -2,29 +2,27 @@
 
 my opinionated doom-emacs config.
 
-## setup
+## pre-requisites
 
-This config is being used on Emacs 26.1 (railwaycat/emacsmacport/emacs-mac).
+Emacs 26.3
 
-- Install emacs-mac with: `--with-modules --with-xml2 --with-natural-title-bar --with-modern-icon --with-gnutls --with-imagemagick`
-- on ~/.emacs.d: `make`
-- Once running: `M-x all-the-icons-install-fonts`
+For a better experience consider installing:
 
-General requirements:
+- `fd`
+- `ripgrep`
+- `the_silver_searcher`
+- `editorconfig`
+- `discount`
 
-- discount
-- editorconfig
-- ripgrep
-- the_silver_searcher
+## setup and update
 
-## update all packages and plugins
-
-- on ~/.emacs.d:
+To setup or update installed packages, execute:
 
 ```
-make clean && make update && make 
-bin/doom compile :plugins && && make compile-core
+~/.emacs.d/bin/doom update
 ```
+
+On the first run, execute: `M-x all-the-icons-install-fonts`
 
 ## modules
 
@@ -55,7 +53,7 @@ Requirements:
 
 ### web
 
-Redefines indentation.
+Indentation setup.
 
 ### python
 
@@ -66,5 +64,9 @@ Requirements:
 - flake8
 - flake8-mypy
 
+## misc
 
-flake8 and flake8-mypy needs to be installed in the used pyenv python version for the project.
+### ignores
+
+The file `~/.ignore` can be used to define global ignores for file patterns and
+is respected by `ripgrep`.
