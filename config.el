@@ -23,7 +23,8 @@
  doom-theme 'doom-gruvbox
 
  ; no line numbers
- doom-line-numbers-style nil
+ ;doom-line-numbers-style nil
+ display-line-numbers-type nil
 
  ; don't kill the buffer if it's removed from every(or non weak) perspective.
  persp-autokill-buffer-on-remove nil
