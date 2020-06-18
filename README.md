@@ -24,6 +24,16 @@ To setup or update installed packages, execute:
 
 On the first run, execute: `M-x all-the-icons-install-fonts`
 
+### C/C++ support
+
+requires:
+
+- `rtags`
+- `llvm`
+- `llvm-devel`
+
+Run `M-x irony-install-server` after dependencies are installed, and re-open file.
+
 ## modules
 
 ### personal
