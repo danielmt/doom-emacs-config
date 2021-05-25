@@ -1,7 +1,7 @@
 ;; MacOS specifics
 (if (memq window-system '(ns mac))
     (progn
-      (setq doom-font (font-spec :family "PragmataPro Mono Liga" :size 18))
+      (setq doom-font (font-spec :family "PragmataPro" :size 18))
 
       ; dark titlebar
       (add-to-list 'default-frame-alist '(ns-transparent-titlebar . t))
@@ -14,13 +14,13 @@
        mac-option-modifier 'meta)
       )
 
-  ; Linux will pickup best font size depending on resolution
+  ; Linux will pick best font size depending on resolution
   (setq
-   doom-font (font-spec :family "PragmataPro Mono Liga"))
+   doom-font (font-spec :family "PragmataPro"))
   )
 
 (setq
- doom-theme 'doom-palenight
+ doom-theme 'doom-ephemeral
 
  ; no line numbers
  ;doom-line-numbers-style nil
