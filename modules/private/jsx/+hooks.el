@@ -1,13 +1,10 @@
 (setq-default
+   ;; custom tsserver install
    ;; tide-tsserver-executable "/usr/local/bin/tsserver"
    tide-format-options '(:indentSize 2 :indentStyle 2 :tabSize 2 :ConvertTabsToSpaces t)
   )
 
 (after! tide
-  ;; tsserver still complains, even with a correct jsconfig.json, that types are only supported with .ts files
-  ;(flycheck-add-mode 'javascript-tide 'rjsx-mode)
-  ;(flycheck-add-next-checker 'javascript-eslint 'jsx-tide 'append)
-
   (add-hook! 'rjsx-mode-hook
     (interactive)
     (tide-setup)
