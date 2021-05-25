@@ -1,3 +1,3 @@
 (package! prettier-js)
-(package! flycheck-flow)
-(package! company-flow)
+;(package! flycheck-flow)
+;(package! company-flow)
