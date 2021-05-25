@@ -1,4 +1,4 @@
-(load! "+pragmata")
+;(load! "+pragmata")
 (load! "+projectile")
 (load! "+parens")
 (load! "+bindings")
