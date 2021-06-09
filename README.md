@@ -4,7 +4,7 @@ my opinionated doom-emacs config.
 
 ## pre-requisites
 
-Emacs 26.3
+Emacs 27.2
 
 For a better experience consider installing:
 
@@ -14,19 +14,42 @@ For a better experience consider installing:
 - `editorconfig`
 - `discount`
 
-## setup and update
+## Setup and update
 
-To setup or update installed packages, execute:
+- Add `~/.emacs.d/bin` to `PATH`.
+- For first-time setup or just sync changes to `init.el`: `doom sync`
+- To upgrade doom-emacs: `doom upgrade`
+- Install icons: `M-x all-the-icons-install-fonts`
 
-```
-~/.emacs.d/bin/doom update
-```
+### Python
 
-On the first run, execute: `M-x all-the-icons-install-fonts`
+Requires:
 
-### C/C++ support
+- pyenv
+- mypy
+- flake8
+- flake8-mypy
+- flake8-comprehensions
 
-requires:
+Run `M-x lsp-install-server RET mspyls` to install Python lsp server.
+
+### Rust
+
+[TODO]
+
+### Javascript/Typescript
+
+Requires:
+
+- `js-yaml`
+- `prettier`
+- `stylelint`
+- `typescript`
+- `tslint`
+
+### C/C++
+
+Requires:
 
 - `rtags`
 - `llvm`
@@ -45,34 +68,12 @@ Run `M-x irony-install-server` after dependencies are installed, and re-open fil
 
 ### js
 
-Adds a little oomph to javascript.
-
 - prettify-js on save
 - tide identifier highlighting
-- flow support
-
-Requirements:
-
-- flow-bin
-- flow-typed
-- js-yaml
-- prettier
-- stylelint
-- typescript
-- tslint
 
 ### web
 
 Indentation setup.
-
-### python
-
-Requirements:
-
-- pyenv
-- mypy
-- flake8
-- flake8-mypy
 
 ## misc
 
