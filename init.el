@@ -171,7 +171,8 @@
        (python           ; beautiful is better than ugly
         +pyenv
         +lsp
-        +pyright)
+        ;; +pyright
+        +cython)
        ;;qt                ; the 'cutest' gui framework ever
        ;;racket            ; a DSL for DSLs
        ;;raku              ; the artist formerly known as perl6
