@@ -61,7 +61,7 @@
        (evil             ; come to the dark side, we have cookies
         +everywhere
         +commands)
-       ;;file-templates    ; auto-snippets for empty files
+       file-templates    ; auto-snippets for empty files
        fold              ; (nigh) universal code folding
        ;;(format +onsave)  ; automated prettiness
        ;;god               ; run Emacs commands without modifier keys
@@ -70,7 +70,7 @@
        ;;objed             ; text object editing for the innocent
        ;;parinfer          ; turn lisp into python, sort of
        rotate-text       ; cycle region at point between text candidates
-       ;;snippets          ; my elves. They type so I don't have to
+       snippets          ; my elves. They type so I don't have to
        ;;word-wrap         ; soft wrapping with language-aware indent
 
        :emacs
@@ -165,11 +165,12 @@
        ;;ocaml             ; an objective camel
        (org                ; organize your plain life in plain text
         ;;+jupyter         ; org-journal integration
-        ;;+journal         ; ipython/jupyter support for babel
+        +journal         ; ipython/jupyter support for babel
         +pandoc          ; export-with-pandoc support
         ;;+pomodoro        ; be fruitful with the tomato technique
         +present         ; using org-mode for presentations
-        +roam            ; org-roam integration
+        +roam2           ; org-roam integration
+        +pretty
         )
        php               ; perl's insecure younger brother
        ;;plantuml          ; diagrams for confusing people more
