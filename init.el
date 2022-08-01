@@ -31,7 +31,7 @@
        (vertico +icons)   ; the search engine of the future
 
        :ui
-       deft              ; notational velocity for Emacs
+       ;;deft              ; notational velocity for Emacs
        doom              ; what makes DOOM look the way it does
        doom-dashboard    ; a nifty splash screen for Emacs
        ;;doom-quit         ; DOOM quit-message prompts when you quit Emacs
@@ -45,9 +45,7 @@
        ;;nav-flash         ; blink the current line after jumping
        ;;neotree           ; a project drawer, like NERDTree for vim
        ophints           ; highlight the region an operation acts on
-       (popup            ; tame sudden yet inevitable temporary windows
-        ;; +all             ; catch all popups that start with an asterix
-        +defaults)       ; default popup rules
+       (popup +defaults)   ; tame sudden yet inevitable temporary windows
        ;;tabs              ; a tab bar for Emacs
        ;;treemacs          ; a project drawer, like neotree but cooler
        ;;unicode           ; extended unicode support for various languages
@@ -66,10 +64,10 @@
        ;;(format +onsave)  ; automated prettiness
        ;;god               ; run Emacs commands without modifier keys
        ;;lispy             ; vim for lisp, for people who don't like vim
-       multiple-cursors  ; editing in many places at once
+       ;;multiple-cursors  ; editing in many places at once
        ;;objed             ; text object editing for the innocent
        ;;parinfer          ; turn lisp into python, sort of
-       rotate-text       ; cycle region at point between text candidates
+       ;;rotate-text       ; cycle region at point between text candidates
        snippets          ; my elves. They type so I don't have to
        ;;word-wrap         ; soft wrapping with language-aware indent
 
@@ -77,7 +75,6 @@
        (dired            ; making dired pretty [functional]
         +ranger          ; bringing the goodness of ranger to dired
         +icons           ; colorful icons for dired-mode
-         )
        electric          ; smarter, keyword-based electric-indent
        ;;ibuffer           ; interactive buffer management
        undo              ; persistent, smarter undo for your inevitable mistakes
@@ -104,8 +101,7 @@
        ;;ein               ; tame Jupyter notebooks with emacs
        (eval +overlay)   ; run code, run (also, repls)
        ;;gist              ; interacting with github gists
-       (lookup           ; helps you navigate your code and documentation
-        +docsets)        ; ...or in Dash docsets locally
+       (lookup)          ; helps you navigate your code and documentation
        lsp               ; M-x vscode
        magit             ; a git porcelain for Emacs
        ;;make              ; run make tasks from Emacs
@@ -165,14 +161,11 @@
        ;;nix               ; I hereby declare "nix geht mehr!"
        ;;ocaml             ; an objective camel
        (org                ; organize your plain life in plain text
-        ;;+jupyter         ; org-journal integration
-        +journal         ; ipython/jupyter support for babel
-        +pandoc          ; export-with-pandoc support
-        ;;+pomodoro        ; be fruitful with the tomato technique
-        +present         ; using org-mode for presentations
+        +journal         ; org-journal integration
+        ;;+pandoc          ; export-with-pandoc support
+        ;;+present         ; using org-mode for presentations
         +roam2           ; org-roam integration
-        +pretty
-        )
+        +pretty)
        php               ; perl's insecure younger brother
        ;;plantuml          ; diagrams for confusing people more
        ;;purescript        ; javascript, but functional
@@ -187,8 +180,7 @@
        rest              ; Emacs as a REST client
        ;;rst               ; ReST in peace
        ;;(ruby +rails)     ; 1.step {|i| p "Ruby is #{i.even? ? 'love' : 'life'}"}
-       (rust             ; Fe2O3.unwrap().unwrap().unwrap().unwrap()
-        +lsp)
+       (rust +lsp)       ; Fe2O3.unwrap().unwrap().unwrap().unwrap()
        ;;scala             ; java, but good
        ;;(scheme +guile)   ; a fully conniving family of lisps
        sh                ; she sells {ba,z,fi}sh shells on the C xor
