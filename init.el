@@ -45,7 +45,7 @@
        ;;nav-flash         ; blink the current line after jumping
        ;;neotree           ; a project drawer, like NERDTree for vim
        ophints           ; highlight the region an operation acts on
-       (popup +defaults)   ; tame sudden yet inevitable temporary windows
+       (popup +defaults) ; tame sudden yet inevitable temporary windows
        ;;tabs              ; a tab bar for Emacs
        ;;treemacs          ; a project drawer, like neotree but cooler
        ;;unicode           ; extended unicode support for various languages
@@ -75,7 +75,7 @@
        (dired            ; making dired pretty [functional]
         +ranger          ; bringing the goodness of ranger to dired
         +icons           ; colorful icons for dired-mode
-       electric          ; smarter, keyword-based electric-indent
+       electric)         ; smarter, keyword-based electric-indent
        ;;ibuffer           ; interactive buffer management
        undo              ; persistent, smarter undo for your inevitable mistakes
        vc                ; version-control and Emacs, sitting in a tree
