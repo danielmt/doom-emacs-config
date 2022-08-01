@@ -1,6 +1,6 @@
 (setq-default
    ;; custom tsserver install
-   ;; tide-tsserver-executable "/usr/local/bin/tsserver"
+   ;; tide-tsserver-executable "/home/linuxbrew/.linuxbrew/bin/tsserver"
    tide-format-options '(:indentSize 2 :indentStyle 2 :tabSize 2 :ConvertTabsToSpaces t)
   )
 
