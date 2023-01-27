@@ -158,22 +158,22 @@
        ;;lua               ; one-based indices? one-based indices
        markdown          ; writing docs for people to ignore
        ;;nim               ; python + lisp at the speed of c
-       ;;nix               ; I hereby declare "nix geht mehr!"
+       nix               ; I hereby declare "nix geht mehr!"
        ;;ocaml             ; an objective camel
        (org                ; organize your plain life in plain text
-        +journal         ; org-journal integration
+        +journal)          ; org-journal integration
         ;;+pandoc          ; export-with-pandoc support
         ;;+present         ; using org-mode for presentations
-        +roam2           ; org-roam integration
-        +pretty)
+        ;; +roam2          ; org-roam integration
+        ;; +pretty)
        php               ; perl's insecure younger brother
        ;;plantuml          ; diagrams for confusing people more
        ;;purescript        ; javascript, but functional
        (python           ; beautiful is better than ugly
         +pyenv
         +lsp
-        +pyright
-        +cython)
+        +pyright)
+       ;;+cython)          ; broken
        ;;qt                ; the 'cutest' gui framework ever
        ;;racket            ; a DSL for DSLs
        ;;raku              ; the artist formerly known as perl6
