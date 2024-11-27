@@ -4,8 +4,8 @@
 ;; in. Remember to run 'doom sync' after modifying it!
 
 ;; NOTE Press 'SPC h d h' (or 'C-h d h' for non-vim users) to access Doom's
-;;      documentation. There you'll find a "Module Index" link where you'll find
-;;      a comprehensive list of Doom's modules and what flags they support.
+;;      documentation. There you'll find a link to Doom's Module Index where all
+;;      of our modules are listed, including what flags they support.
 
 ;; NOTE Move your cursor over a module's name (or its flags) and press 'K' (or
 ;;      'C-c c k' for non-vim users) to view its documentation. This works on
@@ -23,12 +23,11 @@
        :completion
        (company          ; the ultimate code completion backend
         +auto)           ; as-you-type code completion
-       ;;(helm             ; the *other* search engine for love and life
-       ;; +fuzzy)          ; enable fuzzy search backend for helm
+       ;;(corfu +orderless)  ; complete with cap(f), cape and a flying feather!
+       ;;helm              ; the *other* search engine for love and life
        ;;ido               ; the other *other* search engine...
-       ;;(ivy              ; a search engine for love and life
-       ;; +fuzzy)          ; enable fuzzy search backend for ivy
-       (vertico +icons)   ; the search engine of the future
+       ;;ivy               ; a search engine for love and life
+       (vertico +icons)  ; the search engine of the future
 
        :ui
        ;;deft              ; notational velocity for Emacs
@@ -36,13 +35,12 @@
        doom-dashboard    ; a nifty splash screen for Emacs
        ;;doom-quit         ; DOOM quit-message prompts when you quit Emacs
        ;;(emoji +unicode)  ; 🙂
-       hl-todo           ; highlight TODO/FIXME/NOTE tags
-       ;;hydra
+       hl-todo           ; highlight TODO/FIXME/NOTE/DEPRECATED/HACK/REVIEW
        indent-guides     ; highlighted indent columns
        ;;ligatures         ; ligatures and symbols to make your code pretty again
        ;;minimap           ; show a map of the code on the side
        modeline          ; snazzy, Atom-inspired modeline, plus API
-       ;;nav-flash         ; blink the current line after jumping
+       ;;nav-flash         ; blink cursor line after big motions
        ;;neotree           ; a project drawer, like NERDTree for vim
        ophints           ; highlight the region an operation acts on
        (popup +defaults) ; tame sudden yet inevitable temporary windows
@@ -74,8 +72,8 @@
        :emacs
        (dired            ; making dired pretty [functional]
         +ranger          ; bringing the goodness of ranger to dired
-        +icons           ; colorful icons for dired-mode
-       electric)         ; smarter, keyword-based electric-indent
+        +icons)          ; colorful icons for dired-mode
+       electric          ; smarter, keyword-based electric-indent
        ;;ibuffer           ; interactive buffer management
        undo              ; persistent, smarter undo for your inevitable mistakes
        vc                ; version-control and Emacs, sitting in a tree
@@ -101,29 +99,26 @@
        editorconfig      ; let someone else argue about tabs vs spaces
        ;;ein               ; tame Jupyter notebooks with emacs
        (eval +overlay)   ; run code, run (also, repls)
-       ;;gist              ; interacting with github gists
-       (lookup)          ; helps you navigate your code and documentation
+       lookup            ; navigate your code and its documentation
        lsp               ; M-x vscode
        magit             ; a git porcelain for Emacs
        ;;make              ; run make tasks from Emacs
        ;;pass              ; password manager for nerds
        ;;pdf               ; pdf enhancements
-       ;;prodigy           ; Managing external services
-       ;;rgb               ; creating color strings
-       ;;taskrunner        ; taskrunner for all your projects
+       ;;prodigy           ; FIXME managing external services & code builders
        terraform         ; infrastructure as code
        ;;tmux              ; an API for interacting with tmux
        ;;tree-sitter       ; syntax and parsing, sitting in a tree...
        ;;upload            ; map local to remote projects via ssh/ftp
 
        :os
-       (:if IS-MAC macos)  ; improve compatibility with macOS
+       (:if (featurep :system 'macos) macos)  ; improve compatibility with macOS
        ;;tty               ; improve the terminal Emacs experience
 
        :lang
        ;;agda              ; types of types of types of types...
-       ;;beancount         ; the accounting system in Emacs
-       (cc +lsp)           ; C/C++/Obj-C madness
+       ;;beancount         ; mind the GAAP
+       ;;(cc +lsp)         ; C > C++ == 1
        ;;clojure           ; java with a lisp
        ;;common-lisp       ; if you've seen one lisp, you've seen them all
        ;;coq               ; proofs-as-programs
@@ -161,20 +156,15 @@
        ;;nim               ; python + lisp at the speed of c
        ;;nix               ; I hereby declare "nix geht mehr!"
        ;;ocaml             ; an objective camel
-       (org                ; organize your plain life in plain text
-        +journal)          ; org-journal integration
-        ;;+pandoc          ; export-with-pandoc support
-        ;;+present         ; using org-mode for presentations
-        ;; +roam2          ; org-roam integration
-        ;; +pretty)
-       php               ; perl's insecure younger brother
+       (org              ; organize your plain life in plain text
+        +journal)
+       ;;php               ; perl's insecure younger brother
        ;;plantuml          ; diagrams for confusing people more
        ;;purescript        ; javascript, but functional
        (python           ; beautiful is better than ugly
         +pyenv
         +lsp
         +pyright)
-       ;;+cython)          ; broken
        ;;qt                ; the 'cutest' gui framework ever
        ;;racket            ; a DSL for DSLs
        ;;raku              ; the artist formerly known as perl6
@@ -204,7 +194,6 @@
        ;;everywhere        ; *leave* Emacs!? You must be joking
        ;;irc               ; how neckbeards socialize
        ;;(rss +org)        ; emacs as an RSS reader
-       ;;twitter           ; twitter client https://twitter.com/vnought
 
        :private
        personal
