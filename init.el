@@ -21,9 +21,9 @@
        ;;layout            ; auie,ctsrnm is the superior home row
 
        :completion
-       (company          ; the ultimate code completion backend
-        +auto)           ; as-you-type code completion
-       ;;(corfu +orderless)  ; complete with cap(f), cape and a flying feather!
+       ;; (company +auto)     ; the ultimate code completion backend
+       (corfu            ; complete with cap(f), cape and a flying feather!
+           +orderless)
        ;;helm              ; the *other* search engine for love and life
        ;;ido               ; the other *other* search engine...
        ;;ivy               ; a search engine for love and life
@@ -45,7 +45,7 @@
        ophints           ; highlight the region an operation acts on
        (popup +defaults) ; tame sudden yet inevitable temporary windows
        ;;tabs              ; a tab bar for Emacs
-       ;;treemacs          ; a project drawer, like neotree but cooler
+       treemacs          ; a project drawer, like neotree but cooler
        ;;unicode           ; extended unicode support for various languages
        (vc-gutter        ; vcs diff in the fringe
         +pretty)
@@ -200,6 +200,7 @@
        personal
        jsx
        web
+       mermaid
 
        :config
        ;;literate
