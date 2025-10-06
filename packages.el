@@ -50,3 +50,4 @@
 ;; (unpin! t)
 
 (package! catppuccin-theme)
+(package! nose :disable t)
