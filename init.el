@@ -153,7 +153,7 @@
        ;;fstar             ; (dependent) types and (monadic) effects and Z3
        ;;gdscript          ; the language you waited for
        (go               ; the hipster dialect
-         +jsp
+         +lsp
          +tree-sitter)
        ;;(graphql +lsp)    ; Give queries a REST
        ;;(haskell +lsp)    ; a language that's lazier than I am
@@ -185,10 +185,8 @@
        ;;graphviz          ; diagrams for confusing yourself even more
        ;;purescript        ; javascript, but functional
        (python           ; beautiful is better than ugly
-         +poetry
          +tree-sitter
-         +lsp
-         +pyright)
+         +lsp)
        ;;qt                ; the 'cutest' gui framework ever
        ;;racket            ; a DSL for DSLs
        ;;raku              ; the artist formerly known as perl6
