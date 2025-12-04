@@ -83,6 +83,7 @@
 
        :emacs
        (dired            ; making dired pretty [functional]
+        +dirvish
         +icons)          ; colorful icons for dired-mode
        electric          ; smarter, keyword-based electric-indent
        ;;eww               ; the internet is gross
