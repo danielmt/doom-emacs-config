@@ -1,10 +1,10 @@
 # doom-emacs-config
 
-my opinionated doom-emacs config.
+my (somewhat) opinionated doom-emacs config.
 
 ## pre-requisites
 
-Emacs 29.4
+Emacs 30.2
 
 For a better experience consider installing:
 
@@ -37,15 +37,9 @@ Run `M-x lsp-install-server RET pyright` to install Python LSP server.
 
 [TODO]
 
-### Javascript/Typescript
+### Go
 
-Requires:
-
-- `js-yaml`
-- `prettier`
-- `stylelint`
-- `typescript`
-- `tslint`
+[TODO]
 
 ## modules
 
@@ -55,11 +49,6 @@ Requires:
 - magit settings
 - pragmata-prettify-symbols
 - projectile file ignores
-
-### js
-
-- prettify-js on save
-- tide identifier highlighting
 
 ### web
 
