@@ -227,8 +227,8 @@
 
        :private
        personal
-       jsx
-       web
+       ;; jsx
+       ;; web
        mermaid
 
        :config
