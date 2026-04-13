@@ -1,4 +1,2 @@
-;; -*- no-byte-compile: t; -*-
-;;; private/mermaid/packages.el
-
+;;; private/mermaid/packages.el -*- no-byte-compile: t; -*-
 (package! mermaid-mode)
